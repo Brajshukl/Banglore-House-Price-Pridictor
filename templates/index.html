@@ -19,7 +19,36 @@
                     <h1>Welcome to House Price Predictor</h1>
                 </div>
                 <div class="card-body">
-                    <form action=""></form>
+                    <form method="post" accept-charset="utf-8" action="">
+                      <div class="row">
+                        <div class="col-md-6 form-group" style="text-align: center;">
+                          <label ><b>Select the Location:</b></label>
+                          <select class="selectpicker form-control" id="location" name="location" required="1">
+
+                          </select>
+                        </div>
+                        <div class="col-md-6 form-group" style="text-align: center;">
+                          <label ><b>Enter the BHK:</b></label>
+                          <input type="text" class="form-control" id="bhk" name="bhk" placeholder="Enter BHK">
+                        </div>
+                        <div class="col-md-6 form-group" style="text-align: center;">
+                          <label ><b>Enter Number of Bathrooms:</b></label>
+                          <input type="text" class="form-control" id="bath" name="bath" placeholder="Enter No. of Bathrooms">
+                        </div>
+                        <div class="col-md-6 form-group" style="text-align: center;">
+                          <label ><b>Enter sq Feets Area:</b></label>
+                          <input type="text" class="form-control" id="total_sqft" name="total_sqft" placeholder="Enter Square Feet">
+                        </div>
+                        <div class="col-md-12 form-group">
+                          <button class="btn btn-primary form-control" onclick="send_data()">Predict Price</button>
+                        </div>
+                      </div>
+                    </form>
+                    <br>
+
+                    <div class="col-md-12" style="text-align: center;">
+                      <h3><span class="prediction"></span></h3>
+                    </div>
                 </div>
             </div>
         </div>
